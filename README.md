@@ -7,7 +7,7 @@
  npm i
 ````
 
-### run mode
+### run node server
 
 ````
  npm run server
