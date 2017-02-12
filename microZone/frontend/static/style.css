@@ -1,0 +1,45 @@
+body,html, li, ul, h1, h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.microZone{
+    padding-top: 60px;
+}
+.signup, .login{
+    width: 600px;
+}
+.input-group{
+    margin: 10px;
+    width: 500px;
+}
+.sub{
+    width: 100px;
+    margin: 10px 0 20px 100px;
+    float: right;
+}
+.newBox{
+    width: 500px;
+    clear: both;
+}
+.newBox textarea{
+    display: block;
+    margin: 10px;
+}
+.newBox .btn{
+    display: block;
+    float: right;
+    width: 100px;
+}
+.comments{
+    padding: 0;
+}
+.comments li{
+    padding-top: 10px;
+    line-height: 24px;
+}
+.comments .commentText {
+    text-indent: 24px;
+}
