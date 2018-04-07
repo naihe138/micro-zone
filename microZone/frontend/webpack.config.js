@@ -40,6 +40,7 @@ module.exports = {
   devServer: {
     contentBase: __dirname,
     port: 5000,
+    open: true,
     inline: true,
     historyApiFallback: true,
     stats: {

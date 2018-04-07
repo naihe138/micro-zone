@@ -5,7 +5,7 @@
  */
 const path = require("path");
 const session = require('koa-session-store'); // or you can use 'koa-session-store'
-const MongooseStore = require('koa-session-mongoose');
+// const MongooseStore = require('koa-session-mongoose');
 const mongoose = require('mongoose');
 const koa = require('koa');
 const app = koa();
@@ -30,20 +30,13 @@ db.once('open', function (callback) {
 });
 
 
-app.use(session({
-  store: new MongooseStore({
-    collection: 'koaSessions',
-    connection: db,
-    expires: 60 * 60 * 24 * 14, // 2 weeks is the default
-    model: 'KoaSession'
-  })
-}));
-
+app.use(session());
 
 app.use(cors({
  origin: true,
  credentials: true
 }));
+
 app.use(bodyParser());
 app.use(logger());
 app.use(responseTime());
@@ -70,3 +63,4 @@ router.get('/ddd', Users.ddd);
 
 
 app.listen(3001);
+console.log('localhost:3001')

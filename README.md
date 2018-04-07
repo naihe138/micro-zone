@@ -4,16 +4,20 @@
 ## install
 
 ````
+cd microZone
+````
+
+````
  npm i
 ````
 
-### run node server
+### run node server(跑起服务端node)
 
 ````
  npm run server
 ````
 
-### run project
+### run project（跑起前端react）
 
 ````
  npm run fe:dev

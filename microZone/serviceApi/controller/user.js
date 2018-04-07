@@ -23,7 +23,7 @@ const login = function *(){
       return isMatch;
     });
     if (isMatch) {
-      self.session.user = findUser; // 设置session
+      self.cookies.set('user', findUser._id)
       result.status = true;
       result.message = '登录成功';
       result.nickname = findUser.nickname;
